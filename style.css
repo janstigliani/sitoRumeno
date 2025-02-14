@@ -82,4 +82,6 @@
 
 .foto-m1{
     grid-area: foto-m1;
+    max-height: 100%;
+    width: 100%;
 }
