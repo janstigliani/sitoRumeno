@@ -79,23 +79,52 @@
     "foto-m1";
 }
 
-.container-f1{
-    background-color: #ff3333;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-areas: 
-    "foto-m1 foto-f1";
-}
-
 .foto-m1{
     grid-area: foto-m1;
     max-height: 100%;
     width: 100%;
 }
 
-.foto-f1{
-    grid-area: foto-f1;
-    max-height: 100%;
+.father-f{
+    display: flex;
+}
+
+.container-f1{
+    background-color: #660099;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
     width: 100%;
+}
+
+.container-f2{
+    background-color: #ff3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+.foto-f1{
+    max-height: 100%;
+    width: 40%;
+}
+.foto-f2{
+    transition: transform 0.3s ease;
+    max-height: 100%;
+    width: 90%;
+}
+
+.foto-f2:hover {
+    transform: rotate(-45deg);
+}
+
+.f2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-height: 100%;
 }
